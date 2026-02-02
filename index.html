@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSYKOF - Pure Punk Trap | COMING SOON</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #000;
+            color: #fff;
+            font-family: 'Courier Prime', monospace;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: 
+                radial-gradient(circle at 20% 80%, rgba(255,0,0,0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255,0,0,0.05) 0%, transparent 50%),
+                repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,0,0,0.03) 10px, rgba(255,0,0,0.03) 20px);
+        }
+        .container {
+            text-align: center;
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+            border: 5px solid #f00;
+            background: rgba(0,0,0,0.9);
+            box-shadow: 0 0 50px rgba(255,0,0,0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        .container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(90deg, 
+                transparent, 
+                transparent 50px, 
+                rgba(255,0,0,0.02) 50px, 
+                rgba(255,0,0,0.02) 100px);
+            animation: scan 20s linear infinite;
+            pointer-events: none;
+        }
+        @keyframes scan {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(100px); }
+        }
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 6rem;
+            color: #f00;
+            letter-spacing: 15px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            text-shadow: 5px 5px 0 #000;
+            position: relative;
+            z-index: 2;
+        }
+        .tagline {
+            font-size: 1.8rem;
+            color: #fff;
+            margin: 20px 0;
+            padding: 15px;
+            border-top: 3px solid #f00;
+            border-bottom: 3px solid #f00;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            position: relative;
+            z-index: 2;
+        }
+        .subtag {
+            color: #ccc;
+            font-size: 1.2rem;
+            margin: 20px 0 40px;
+            line-height: 1.6;
+            position: relative;
+            z-index: 2;
+        }
+        .epk-box {
+            background: rgba(255,0,0,0.1);
+            border-left: 5px solid #f00;
+            padding: 25px;
+            margin: 40px 0;
+            text-align: left;
+            position: relative;
+            z-index: 2;
+        }
+        .epk-box h3 {
+            color: #f00;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        .epk-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .epk-box li {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .epk-box li::before {
+            content: '▶';
+            color: #f00;
+            position: absolute;
+            left: 0;
+        }
+        .buttons {
+            margin: 40px 0;
+            position: relative;
+            z-index: 2;
+        }
+        .btn {
+            display: inline-block;
+            background: #f00;
+            color: #000;
+            padding: 15px 30px;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border: 3px solid #000;
+            transition: all 0.3s;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.2rem;
+        }
+        .btn:hover {
+            background: #000;
+            color: #f00;
+            border: 3px solid #f00;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255,0,0,0.3);
+        }
+        .email {
+            color: #f00;
+            font-size: 1.5rem;
+            margin: 30px 0;
+            font-weight: bold;
+            position: relative;
+            z-index: 2;
+        }
+        footer {
+            margin-top: 50px;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        .glitch {
+            animation: glitch 0.5s infinite;
+        }
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+            100% { transform: translate(0); }
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 3.5rem; letter-spacing: 8px; }
+            .container { padding: 20px; margin: 20px; }
+            .btn { display: block; margin: 10px auto; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="glitch">PSYKOF</h1>
+        <div class="tagline">PURE PUNK TRAP</div>
+        <div class="subtag">
+            THE PREACHER TO THE PUNX<br>
+            CHARLOTTE'S CONCRETE SOUL
+        </div>
+        
+        <div class="epk-box">
+            <h3>OFFICIAL EPK COMING SOON</h3>
+            <ul>
+                <li><strong>"NU CREATURE"</strong> - Single out Jan 23, 2026</li>
+                <li><strong>JESUS DJENT EP</strong> - Imminent Release</li>
+                <li><strong>BURNER FROM THE BURBZ EP</strong> - In Production</li>
+                <li><strong>30K+</strong> Organic Streams | DIY Ethos</li>
+                <li><strong>GHANA GANG ENT.</strong> | Pure Punk Trap</li>
+            </ul>
+        </div>
+        
+        <div class="email">psy.kof@protonmail.com</div>
+        
+        <div class="buttons">
+            <a href="mailto:psy.kof@protonmail.com" class="btn">BOOKING INQUIRIES</a>
+            <a href="#" class="btn">LISTEN</a>
+            <a href="#" class="btn">PRESS KIT</a>
+        </div>
+        
+        <footer>
+            © 2026 PSYKOF / GHANA GANG ENT.<br>
+            PURE PUNK TRAP | CHRISTIAN UNDERGROUND<br>
+            APEX, NORTH CAROLINA
+        </footer>
+    </div>
+</body>
+</html>
