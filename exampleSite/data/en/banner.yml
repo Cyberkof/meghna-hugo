@@ -1,12 +1,9 @@
-############################### Banner ################################
-banner:
-  enable : true
-  bg_image_webp : "images/backgrounds/hero-area.webp"
-  bg_image : "images/backgrounds/hero-area.jpg"
-  icon : "" # themify icon pack : https://themify.me/themify-icons
-  title : "Experience the new reality"
-  content : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, excepturi. At recusandae sit perferendis autem,iste tempora nostrum numquam sapiente!"
-  button:
-    enable : true
-    label : "Explore Us"
-    link : "#services"
+title: "PSYKOF"
+subtitle: "PURE PUNK TRAP"
+description: "COMING SOON | The Preacher to the Punx | Charlotte's Concrete Soul"
+content: "Official EPK launching soon. 'Nu Creature' out Jan 23, 2026. Jesus Djent EP coming."
+button:
+  enable: true
+  label: "BOOKING: psy.kof@protonmail.com"
+  link: "mailto:psy.kof@protonmail.com"
+bg_image: "images/banner-bg.jpg"
